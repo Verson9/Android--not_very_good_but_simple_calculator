@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name = "dividation">Dividation</string>
+    <string name = "substraction">Substraction</string>
+    <string name = "modulo">Modulo</string>
+    <string name = "result">Result</string>
+    <string name = "multiplication">multiplication</string>
+    <string name = "adition">adition</string>
+    <string name = "druga_liczba">Druga Liczba</string>
+    <string name = "pierwsza_liczba">Pierwsza Liczba</string>
+    <string name = "first_number">First Number</string>
+    <string name = "second_number">Second Number</string>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+          xmlns:android = "http://schemas.android.com/apk/res/android"
+          xmlns:tools = "http://schemas.android.com/tools"
+          xmlns:app = "http://schemas.android.com/apk/res-auto"
+          android:layout_width = "match_parent"
+          android:layout_height = "match_parent"
+          tools:context = ".MainActivity">
+    
+    <TextView
+              android:text = "@string/druga_liczba"
+              android:layout_width = "wrap_content"
+              android:layout_height = "wrap_content"
+              app:layout_constraintStart_toStartOf = "parent" app:layout_constraintEnd_toEndOf = "parent"
+              android:id = "@+id/textView2"
+              app:layout_constraintHorizontal_bias = "0.498" app:layout_constraintBottom_toTopOf = "@+id/secondNumber"
+    />
+    <Button
+              android:text = "@string/modulo"
+              android:layout_width = "wrap_content"
+              android:layout_height = "wrap_content"
+              android:id = "@+id/modButton"
+              app:layout_constraintTop_toBottomOf = "@+id/mulButton" android:layout_marginTop = "40dp"
+              app:layout_constraintStart_toStartOf = "parent" android:layout_marginStart = "20dp"
+              app:layout_constraintEnd_toEndOf = "parent"/>
+    
+    <TextView
+        android:id = "@+id/resultField"
+        android:layout_width = "0dp"
+        android:layout_height = "80dp"
+        android:layout_marginBottom = "92dp"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintHorizontal_bias = "0.0"
+        app:layout_constraintLeft_toLeftOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent" />
+    
+    <Button
+              android:text = "@string/adition"
+              android:layout_width = "wrap_content"
+              android:layout_height = "wrap_content" app:layout_constraintTop_toTopOf = "parent"
+              app:layout_constraintStart_toStartOf = "parent" android:layout_marginTop = "40dp"
+              android:layout_marginStart = "20dp" android:id = "@+id/addButton"/>
+    <Button
+              android:text = "@string/multiplication"
+              android:layout_width = "wrap_content"
+              android:layout_height = "wrap_content"
+              app:layout_constraintStart_toStartOf = "parent" android:layout_marginStart = "20dp"
+              android:id = "@+id/mulButton" app:layout_constraintTop_toBottomOf = "@+id/addButton"
+              android:layout_marginTop = "40dp"/>
+    <Button
+              android:text = "@string/substraction"
+              android:layout_width = "wrap_content"
+              android:layout_height = "wrap_content" app:layout_constraintTop_toTopOf = "parent"
+              android:layout_marginTop = "40dp" android:id = "@+id/subButton"
+              app:layout_constraintStart_toEndOf = "@+id/addButton" android:layout_marginStart = "40dp"
+              app:layout_constraintEnd_toEndOf = "parent"/>
+    <Button
+              android:text = "@string/dividation"
+              android:layout_width = "wrap_content"
+              android:layout_height = "wrap_content"
+              android:id = "@+id/divButton" app:layout_constraintStart_toEndOf = "@+id/mulButton"
+              android:layout_marginStart = "40dp" app:layout_constraintEnd_toEndOf = "parent"
+              app:layout_constraintTop_toBottomOf = "@+id/subButton" android:layout_marginTop = "40dp"
+              app:layout_constraintHorizontal_bias = "0.392"/>
+    
+    <EditText
+        android:id = "@+id/secondNumber"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginBottom = "40dp"
+        android:ems = "10"
+        android:inputType = "number"
+        app:layout_constraintBottom_toTopOf = "@+id/resultField"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintHorizontal_bias = "0.0"
+        app:layout_constraintStart_toStartOf = "parent" />
+    
+    <EditText
+        android:id = "@+id/firstNumber"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginBottom = "16dp"
+        android:autofillHints = ""
+        android:ems = "10"
+        android:inputType = "number"
+        app:layout_constraintBottom_toTopOf = "@+id/textView2"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintHorizontal_bias = "0.0"
+        app:layout_constraintStart_toStartOf = "parent" />
+    
+    <TextView
+        android:id = "@+id/textView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "@string/pierwsza_liczba"
+        app:layout_constraintBottom_toTopOf = "@+id/firstNumber"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintHorizontal_bias = "0.498"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/modButton"
+        app:layout_constraintVertical_bias = "1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
